@@ -1,0 +1,1 @@
+This site is a template for any websites involving restaurants. 
