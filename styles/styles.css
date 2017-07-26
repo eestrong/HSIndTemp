@@ -1,0 +1,82 @@
+nav {
+     list-style-type: none;
+     padding: 1%;
+     text-align:center;
+     display: block;
+     padding-top: 20px;
+     margin:0%;
+     position:fixed;
+     width:100%;
+     z-index:1;
+     background-color:hsla(200,0%,0%,.7);
+    
+;}
+     
+nav a.active{
+  color: yellow;
+}  
+ 
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  padding: 2%;
+  font-family: 'Yantramanav', sans-serif;
+
+
+}
+
+ h1 {
+ 
+    font-family: 'Abel', sans-serif;
+    text-align:center; 
+    font-size: 3em;
+    color:;
+}
+    
+
+  
+li {
+  text-align:center;
+  list-style-type: none;
+  color:white;
+  font-size:2em;
+}
+
+.nav-toggle{
+  display:none;
+  background-color:black;
+  color:grey;
+  border-style:solid;
+  border-color:grey;
+  border-radius:.4em
+}
+
+/* 5. style nav-item in desktop view*/
+
+.nav-item{
+  display:inline-block;
+  /*margin-right:5px;*/
+  padding-left: 3%;
+  padding-right: 3%;
+  white-space: nowrap;
+}
+
+/* 6. Add media query to trigger mobile styles*/
+
+@media (max-width: 800px) {
+  .nav-toggle {
+    display:block; /* display menu button*/
+  }
+  
+  .nav-item{
+    display:block; /*6b. display menu items in a column */
+    
+  }
+  
+    .mobile-nav-hidden{
+    display:none; /* 6c. hide nav items (add utility class to <ul>) */
+  }
+  
+  
+}
